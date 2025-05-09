@@ -9,14 +9,12 @@
 
 ## Create Docker image
 If you have Git installed, Clone the NSD repository to your local host with
-´´´sh
-git clone https://github.com/cloubit/docker-nsd.git
-´´´
+`git clone https://github.com/cloubit/docker-nsd.git`
 or download the last repository.
 If you have docker installed, you can create your own Docker Image about:
-´´´sh
+```sh
 docker build -t nsd:4.12.0 .
-´´´
+```
 
 ## Run the NSD Docker Container
 Start the Docker container with a volume and copy your configuration file (nsd.conf) in the folder.
