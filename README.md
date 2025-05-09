@@ -8,7 +8,7 @@
 -  Openssl 3.5.0
 
 ## Create Docker image
-If you have Git installed, Clone the NSD repository to your local host with
+If you have Git installed, clone the NSD repository to your localhost with
 ```sh
 git clone https://github.com/cloubit/docker-nsd.git
 ```
