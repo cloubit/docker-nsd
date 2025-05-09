@@ -1,0 +1,15 @@
+$TTL           7200                                              ;Default TTL.
+$ORIGIN        1.168.192.in-addr.arpa.                                  ;If Origin set, @ may be used.
+
+@               IN    SOA     nsd1.example.local. nsdadmin.example.local. (
+                              2025031601                         ;serial
+                              7200                               ;refresh
+                              3600                               ;retry
+                              604800                             ;expire
+                              1800                               ;minimum TTS (NXDOMAIN) 7200
+                              )
+
+                IN    NS      nsd1.example.local.
+
+; PTR Records
+10              IN    PTR      server-01.example.local.        ;Host
