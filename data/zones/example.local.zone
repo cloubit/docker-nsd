@@ -12,8 +12,8 @@ $ORIGIN         example.local.                               ;Wenn Origin gesetz
 @               IN    NS      nsd1
 
 ; A Records
-dns1                 IN  A       192.168.1.10            ;Host
-server01             IN  A       192.168.1.20            ;Host
+dns1                 IN  A       192.168.1.10                ;Host
+server01             IN  A       192.168.1.20                ;Host
 
 ; CNAME Records
-my-cname                   IN  CNAME   server01
+my-cname                   IN  CNAME   server01               ;cname for Host server01 (192.168.1.20)
