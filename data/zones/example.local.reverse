@@ -12,4 +12,5 @@ $ORIGIN        1.168.192.in-addr.arpa.                                  ;If Orig
                 IN    NS      nsd1.example.local.
 
 ; PTR Records
-10              IN    PTR      server-01.example.local.        ;Host
+10              IN    PTR      nsd1.example.local.        ;Host
+20              IN    PTR      server-01.example.local.   ;Host
