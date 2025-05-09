@@ -1,0 +1,19 @@
+$TTL	          7200                                         ;Default TTL. Wird verwendet, wenn keine andere angegeben wurde.
+$ORIGIN         example.local.                               ;Wenn Origin gesetzt, darf @ verwendet werden
+
+@               IN    SOA     nsd1 nsdadmin (
+                              2025031601                     ;serial
+                              7200                           ;refresh
+                              3600                           ;retry
+                              604800                         ;expire
+                              1800                           ;minimum TTS (NXDOMAIN) 7200
+                              )
+
+@               IN    NS      nsd1
+
+; A Records
+dns1                 IN  A       192.168.1.10            ;Host
+
+
+; CNAME Records
+my-cname                   IN  CNAME   nsd1
