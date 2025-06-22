@@ -33,7 +33,7 @@ RUN set -x -e; \
   curl -sSL "${OPENSSL_DOWNLOAD_URL}"/"${OPENSSL_VERSION}"/"${OPENSSL_VERSION}".tar.gz.asc -o openssl.tar.gz.asc && \
   GNUPGHOME="$(mktemp -d)" && \
   export GNUPGHOME && \
-  gpg --no-tty --keyserver hkps://keys.openpgp.org --recv-keys "${OPENSSL_PGP_0}" "&& \
+  gpg --no-tty --keyserver hkps://keys.openpgp.org --recv-keys "${OPENSSL_PGP_0}" && \
   gpg --batch --verify openssl.tar.gz.asc openssl.tar.gz && \
   tar -xzf openssl.tar.gz && \
   rm -f openssl.tar.gz && \
